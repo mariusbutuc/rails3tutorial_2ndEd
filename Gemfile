@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails',            '3.2.9'
 gem 'jquery-rails',     '2.0.2'
-
+gem 'haml-rails'
 
 group :assets do
   gem 'sass-rails',     '3.2.5'
@@ -13,6 +13,12 @@ end
 group :development, :test do
   gem 'sqlite3',        '1.3.5'
   gem 'rspec-rails',    '2.11.0'
+end
+
+group :development do
+  gem 'thin'
+  gem 'travis'
+  gem 'travis-lint'
 end
 
 group :test do
