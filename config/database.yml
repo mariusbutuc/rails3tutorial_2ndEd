@@ -1,5 +1,23 @@
+defaults: &defaults
+  adapter:  postgresql
+  pool:     5
+  timeout:  5000
+  host:     localhost
+
 development:
-  adapter: postgresql
-  host: localhost
+  <<:       *defaults
   username: marius
+  password:
   database: wts_dev
+
+test:
+  <<:       *defaults
+  username: postgres
+  password:
+  database: wts_test
+
+production:
+  <<:       *defaults
+  username: postgres
+  password:
+  database: wts_prod
