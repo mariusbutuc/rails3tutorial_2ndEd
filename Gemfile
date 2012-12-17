@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails',            '3.2.9'
 gem 'jquery-rails',     '2.0.2'
 gem 'haml-rails'
+gem 'thin'
 
 group :assets do
   gem 'sass-rails',     '3.2.5'
@@ -16,7 +17,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'thin'
   gem 'travis'
   gem 'travis-lint'
 end
