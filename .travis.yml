@@ -5,7 +5,7 @@ env:
   global:
     - secure: "gpvQKUMaDkVArpAJjkEN0eNzwjhqGR8HLga9moD+g3og2s/Tl8EtS56vvX1w\nFB5VidCYRRAfSB1MWWxTybj8HSC+LWtuHKNkVQSZLBdAdoCI4PhSBBh0Yokl\nAVuZewGbp0zBhKPtZJ7ifT0xZ1ID9kFdeyDJabuFuCnHbVoPb8c="
 script:
-  - RAILS_ENV=test bundle exec rake --trace db:migrate test
+  - RAILS_ENV=test bundle exec rake --trace db:migrate
 before_script:
   - psql -c 'create database wts_test' -U postgres
 after_script:
