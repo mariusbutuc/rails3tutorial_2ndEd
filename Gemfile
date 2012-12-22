@@ -5,6 +5,7 @@ gem 'jquery-rails',     '2.0.2'
 gem 'pg',               '0.12.2'
 gem 'haml-rails'
 gem 'thin'
+gem 'bootstrap-sass',   '2.1'
 
 
 group :assets do
